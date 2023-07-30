@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block tag %} {% endblock %}</title>
+
+    <!--========= For Icon ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
+</head>
+<body>
+    <!-- ========= Navbar ============ -->
+    <header class="header">
+        <nav class="nav container">
+            <a class="nav_logo" href="#">Gamezone</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--============ End of navbar =======-->
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
