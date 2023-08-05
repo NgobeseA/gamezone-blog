@@ -1,0 +1,33 @@
+/*=========== Google font Lora, Poppins & Rem =============*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;600&family=REM&display=swap');
+
+/*========== CSS Variables =========*/
+:root{
+    --hearder-height: 3.5rem;
+
+    /*=====colors=====*/
+    --text-color: hsl(210, 50%, 20%);
+    --title-color: hsl(210, 20%, 15%);
+    --body-color: hsl(210, 55%, 75%);
+
+    /*======== Fonts ======*/ 
+    --body-font: 'Lora', serif;
+    --second-font: 'Poppins', sans-serif;
+    --third-font: 'REM', sans-serif;
+    --normal-size-font: 1rem;
+    --small-font-size: .800rem;
+
+    /*==== Font weigh ====*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 600;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-size-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+}
+

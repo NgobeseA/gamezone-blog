@@ -5,26 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block tag %} {% endblock %}</title>
 
+    <!---========= Link static file ==========-->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
     <!--========= For Icon ======-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
+
+    <!--========== Bootstrap ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
     <!-- ========= Navbar ============ -->
     <header class="header">
-        <nav class="nav container">
+        <nav class="nav fluid-container">
             <a class="nav_logo" href="#">Gamezone</a>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item">
                         <a href="#" class="nav_link">Home</a>
                     </li>
+                    <li class="nav_item">
+                        <a href="{% url 'new_article' %}" class="nav_link">New Article</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
     <!--============ End of navbar =======-->
+    <div class="container">
     {% block content %}
 
     {% endblock %}
+    </div>
+    
+
+    <!--========= Boostrap JS =========-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
