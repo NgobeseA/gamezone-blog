@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block tag %} {{ article.title_tag }} {% endblock %}
+
+{% block content %}
+<h2>{{ article.title }}</h2>
+<p>Created by: {{article.author.first_name }} {{ article.author.last_name }} </p>
+<p>Published: {{ article.day }}</p>
+<hr>
+<p>{{ article.body }}</p>
+
+
+{% endblock %}
