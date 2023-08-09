@@ -7,7 +7,8 @@
 <hr>
     <ul>
     {% for article in object_list %}
-        <li>{{ article.title }} - {{ article.author.first_name }}</li>
+        <li>{{ article.title }} - {{ article.author.first_name }} -
+             <small> <a href="{% url 'remove_article' article.pk %}">Delete</a></small></li>
     {% endfor %}
             
 </ul>

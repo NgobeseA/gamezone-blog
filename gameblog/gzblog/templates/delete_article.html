@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block tag %}Delete Article{% endblock %}
+
+{% block content %}
+<h3>Deleting {{ post.title }} </h3>
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    <p> Are you sure you want to delete {{ article.title }}?</p>
+    <input type="submit" value="confirm">
+</form>
+
+{% endblock %}
